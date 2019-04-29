@@ -1,0 +1,64 @@
+In recent years, we see in the literature several proposals for predicting the success of a movie and how much revenue it will generate. To achieve this goal, social networks data are used, ranging from reviews, director's popularity, and actor’s popularity, as described below.
+
+%Comentário da Isabel Ajustado
+Shruti et al.~\cite{2014Influencesocialmedia} investigate if comments on social media have any significant influence on the performance of a movie. They use data collected from YouTube, Twitter, and Facebook to verify whether they have any impact on the box office of a movie or not. In their findings, they demonstrate that some features are very impactful for improving model performance, while others such as Facebook likes are not reliable metrics. They also conclude that the popularity of the actors involved in the movie is a key factor for increasing revenue.
+
+%old
+%Shruti et al.~\cite{2014Influencesocialmedia} investigates if social media has any significant influence in a movie performance. They collect data from YouTube, Twitter, and Facebook to verify if this data impacts the movie's profits. On their findings, they state that some features are very useful to improve the prediction, but others such as Facebook likes are not reliable. They also conclude that the popularity of the actors involved in the movie is a key factor for revenue.
+
+
+Bansal et al.~\cite{2014Influencesocialmedia} use an approach of collecting social media data to predict the users' preferred movie genre. Based on a user's predicted genre, they proceed to perform automatic recommendation of movies. However, their model only presents movie genres and recommendations, with no visualization technique. A different approach is presented in ~\cite{2017PredictingMarketRevenue}. The paper uses tweets collected during the opening week of several movies to predict the gross amount for each of them. Assorted machine learning algorithms were combined and fine-tuned to find out the best performing models.
+% I: revisar acima "The papers uses tweets collected...". É sobre os dois paper ou só sobre o último? É necessário corrigir concordância (These papers use, ou This paper uses
+%JS Ajustado
+
+%old
+%Bansal et al.~\cite{2016LSISVD} also collects social media data from Twitter to predict the users' preferred movies genre and recommending movies according to the predict genre. Their model only presents movies genres and movies recommendations, without any visualization technique. A different approach is presented in~\cite{2017PredictingMarketRevenue}. This paper uses tweets collected during the movie's opening week to predict the gross amount for the movie. Several machine learning algorithms were combined to find out the most accurate results. 
+
+Features like the number of views, likes and dislikes from YouTube movie trailers were used by Rahim and Chowdhury~\cite{2017MiningYouTubeTrailers} to predict the gross income of the movies by means of data mining algorithms. They extensively tested several different algorithms to identify the most accurate one. Sentiment analysis of the comments is mentioned only as future work. 
+
+
+%old
+%Features like number of views, likes and dislikes from YouTube movies trailers were used by Rahim and Chowdhury~\cite{2017MiningYouTubeTrailers} to predict the gross incoming of the movies through data mining algorithms. They tested several data mining algorithms to find the one with better accuracy. The sentiment analysis of the comments is mentioned only as future work for this paper.
+
+Other works as proposed by Bhave et al~\cite{2015Crowd-Source} and Ahmed et al~\cite{2015DifferentFactors} combine features extracted from social media (such as YouTube comments, and tweets) with classical movie information (such as actors, directors, and script) to predict the movie gross. In their findings, the authors state that both types of features can be combine to improve model accuracy.
+
+%old
+%Other works~\cite{2015Crowd-Source,2015DifferentFactors} combine features extracted from social media (like YouTube comments, and tweets) with classical features used to calculate movies revenue (like actors, directors, and script), to predict the movie gross. The authors stated that using classical and social media features combined can improve prediction accuracy.
+
+
+Apala et al.~\cite{2013weka} use Weka (Waikato Environment for Knowledge Analysis)\footnote{https://sourceforge.net/projects/weka/} to predict degrees of box office success (flop, success, and neutral). For this, they combine data gathered from social media together with the movie's cast and director's popularity. They present a final classification report and some conclusions on which factors they observed to be the most relevant ones. However, no visual analysis was presented for the understanding of the results.
+
+%old
+%Apala et al.~\cite{2013weka} use Weka (Waikato Environment for Knowledge Analysis)\footnote{https://sourceforge.net/projects/weka/} to predict if a movie will be a success, neutral or a box office failure. For this, they combine data gathered from social media along with the movie's cast and the movie's director popularity. They only present a final classification (flop, success and neutral) and some conclusions about which factors they observed to be the most relevant ones. On this study, they do not provide visualization tools for detailed results. 
+
+Some visualization techniques were used by Lee et al.~\cite{VisualizationMovie} to find hidden relationships between movies and their reviews. They explore the impact of the ``word of mouth'' effect on movie profits and review rates over time. During their work, they were able to uncover some attempts to manipulate review rates to persuade people into watching a particular movie, but sentiment analysis is not provided.
+% I: alterei o final do parágrafo acima. Original abaixo.
+% During their work, they were able to uncover some attempts to manipulate review rates to persuade people into watching a particular movie. Sentiment analysis is not provided in this paper.
+%done
+
+%old
+%Some visualization techniques were used by Lee et al.~\cite{VisualizationMovie} to find hidden relationships between movies and their reviews. They analyze the word of mouth effect on movies profits and the ratio of reviews over time. But sentiment analysis is not provided on this paper. They were able to find some attempts to manipulate reviews rates to persuade people into watching a particular movie.
+
+Other authors~\cite{2017MoviePredictionData} consider factors like movie name, year of release, genres (drama, action, romance, comedy, and others), directors, music directors, producers, languages, and historical data in data mining algorithms to assess the success rate of a movie.
+We found only one work~\cite{2016EmotionsIMDB} that focus on the movie's viewers and not on the movie's makers. On this work, they collected movie reviews from IMDB movie site, and evaluate them according to 4 dimensions: pleasantness, attention, sensitivity, and aptitude. They present their findings in an Emotion Map, that shows the number of reviews in each dimension.
+
+%rever ultima frase
+% I: acho que precisa acrescentar a parte dos algoritmos na última frase. Talvez algo como:
+% However, as far as we know, no other work employs unsupervised lexicon-based approach and visualization techniques to analyze viewers' comments to generate a viewer recommendation summary.
+Most works mentioned above present different approaches to predict the success of a movie, while others focus on the preferred genres of users. Social media data, as well as classical movie information are widely used for predicting the movie gross. However, as far as we know, no other work employs unsupervised lexicon-based approach and visualization techniques to analyze viewers' comments to generate a viewer recommendation summary.
+
+%This approach is different because it puts the viewer as the main persona, not the movie companies. The majority of the papers focus on movie revenue, meanwhile we found only one other paper that express concerns about the viewer. We believe that this work can be very useful to helping people decide whether or not to go the movie theater.
+%essa recomendação pode ser interessante por:
+%there is no other work that analyzers viewer's comments on social media to generate a viewer recommendation summary
+
+% I: Considerando o parágrafo e o comentário acima, sugiro colocar da seguinte forma (se concordarem, é só comentar o parágrafo acima e descomentar abaixo):
+%JS Aceitei o paragrafo mas mudei um pouco a ultima frase, vejam se concordam a original está abaixo
+This approach is different because it puts the viewer as the main persona, not the movie companies. The majority of the researched papers focus on movie revenue, meanwhile, we found only one other paper that expresses concerns about the viewer. We believe that a ``recommendation summary'' generated using viewer's comments on social media can be very useful to help people decide whether or not to go to the movie theater.
+
+%We believe that the analysis of the viewer's comments on social media to generate a viewer recommendation summary can be very useful to help people decide whether or not to go to the movie theater.
+
+
+
+
+%
+%The works mentioned above present different approaches to predict the success of a movie (most of them) or the users' favorite genre movies. They use social media data and features like ratings and the actor's popularity for predicting the movie gross. However, as far as we know, there is no other work that analyzes viewers' comments on social media to generate a viewer recommendation summary, using a visual approach.
